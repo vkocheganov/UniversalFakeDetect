@@ -16,7 +16,7 @@
 # Open UniversalFakeDetect_test/unifd.ipynb jupyter notebook and redefine variables on the first lines:
 - base_fold = f"/home/vkocheganov/work/research_projects/dollar/UniversalFakeDetect_test"
 - result_fold = os.path.join(base_fold, 'result')
-- ckpt_path = os.path.join(base_fold, "best")
+- ckpt_path = os.path.join(base_fold, "best_0") # or best_2. The best one is best_2 from last experiment
 - high_sky_dataset_path = "/mnt/ssd4tb/vk/dollar/dollar_dataset"
 
 # Check output metrics in 'result_fold' folder or via output tupled variables 'ap, r_acc0, f_acc0, acc0, r_acc1, f_acc1, acc1, best_thres'
