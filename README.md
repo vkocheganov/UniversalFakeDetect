@@ -9,7 +9,7 @@
 - pip3 install -r requirements.txt
 - conda install -n fakedet_test ipykernel --update-deps --force-reinstall
 
-# [Download](https://drive.google.com/file/d/1-wSCE5BGHu48f7FVFOjB2tPbbcBDI_yE/view?usp=drive_link) best model .pth file and put it like this:
+# [Download](https://drive.google.com/drive/folders/1AApe9dSWeAUx_mWgw2iOEDMgfmtnqdXg?usp=sharing) best model .pth file and put it like this:
 - UniversalFakeDetect_test/best
 
 # Put dataset from test assignment to the folder of your choice (e.g. in directory UniversalFakeDetect_test/../FAKE_IMAGES/dollar_datasets_train/train/{0_real,1_fake})
