@@ -20,6 +20,7 @@ import random
 import shutil
 from scipy.ndimage.filters import gaussian_filter
 
+
 SEED = 0
 def set_seed():
     torch.manual_seed(SEED)

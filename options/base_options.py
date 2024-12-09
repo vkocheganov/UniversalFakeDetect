@@ -24,13 +24,15 @@ class BaseOptions():
          
         parser.add_argument('--real_list_path', default=None, help='only used if data_mode==ours: path for the list of real images, which should contain train.pickle and val.pickle')
         parser.add_argument('--fake_list_path', default=None, help='only used if data_mode==ours: path for the list of fake images, which should contain train.pickle and val.pickle')
+        # parser.add_argument('--wang2020_data_path', default=None, help='only used if data_mode==wang2020 it should contain train and test folders')
         parser.add_argument('--wang2020_data_path', default=None, help='only used if data_mode==wang2020 it should contain train and test folders')
         parser.add_argument('--data_mode',  default='ours', help='wang2020 or ours')
         parser.add_argument('--data_label', default='train', help='label to decide whether train or validation dataset')
         parser.add_argument('--weight_decay', type=float, default=0.0, help='loss weight for l2 reg')
         
         parser.add_argument('--class_bal', action='store_true') # what is this ?
-        parser.add_argument('--batch_size', type=int, default=256, help='input batch size')
+        # parser.add_argument('--batch_size', type=int, default=256, help='input batch size')
+        parser.add_argument('--batch_size', type=int, default=128, help='input batch size')
         parser.add_argument('--loadSize', type=int, default=256, help='scale images to this size')
         parser.add_argument('--cropSize', type=int, default=224, help='then crop to this size')
         parser.add_argument('--gpu_ids', type=str, default='0', help='gpu ids: e.g. 0  0,1,2, 0,2. use -1 for CPU')
